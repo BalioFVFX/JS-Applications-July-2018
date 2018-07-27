@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div>
+    <label>
+        <span>Title</span>
+        <input id="bookTitle" type="text"/>
+    </label>
+    <label>
+        <span>Author</span>
+        <input id="bookAuthor" type="text"/>
+    </label>
+    <label>
+        <span>ISBN</span>
+        <input id="bookISBN" type="text"/>
+    </label>
+    <label>
+        <span>Tags</span>
+        <input id="tags" type="text"/>
+    </label>
+    <label>
+        <input id="send" type="submit" value="SEND"/>
+    </label>
+    <label>
+        <input id="load" type="submit" value="LOAD"/>
+    </label>
+</div>
+<br>
+<label>
+    <span>Book collection</span>
+</label>
+<br>
+<div id="books">
+</div>
+<script src="solution.js"></script>
+<script>attachEvents()</script>
+</body>
+</html>
