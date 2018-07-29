@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <h2>Add country</h2>
+    <span>Country name: </span>
+    <input type="text" id="countryName"/>
+    <button id="sendCountry">Send country</button>
+</div>
+<div>
+    <h2>View countries</h2>
+    <span>Select country: </span>
+    <span>
+        <select id="countries"></select>
+        <button id="editCountry" style="display:none">Edit</button>
+        <button id="deleteCountry" style="display:none">Delete</button>
+        <input id="newCountry" type="text" style="display:none"/>
+    </span>
+</div>
+<div>
+    <h2>Add town</h2>
+    <span>Town name: </span>
+    <input type="text" id="townName"/>
+    <button id="sendTown">Send town</button>
+</div>
+<div>
+    <h3>Towns</h3>
+    <ul id="towns">
+    </ul>
+</div>
+<script src="solution.js"></script>
+<script>loadData();</script>
+</body>
+</html>
