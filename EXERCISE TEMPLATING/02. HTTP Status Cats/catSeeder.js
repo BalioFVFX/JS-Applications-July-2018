@@ -23,4 +23,4 @@
     ];
 
     window.cats = cats;
-})()
+})();
