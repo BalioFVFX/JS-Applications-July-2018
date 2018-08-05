@@ -1,0 +1,21 @@
+<section id="contacts">
+    <a href="#/contacts">CONTACTS</a>
+    <a href="#/profile">PROFILE</a>
+    <a href="#/logout">LOGOUT</a>
+    <div class="container">
+        <div id="book" class="box-large">
+            <div id="list">
+                <h1>Contacts</h1>
+                <div class="content">
+                    {{#each users}}
+                    <div class="contact" data-id="{{@index}}" name="contacts">
+                        <span class="avatar small">&#9787;</span>
+                        <span class="title">{{username}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{> details}}
+        </div>
+    </div>
+</section>
