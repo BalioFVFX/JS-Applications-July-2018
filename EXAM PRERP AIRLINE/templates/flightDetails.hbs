@@ -1,0 +1,21 @@
+{{> nav}}
+<section id="viewFlightDetails">
+    <div class="ticket-area">
+        <div class="ticket-area-left">
+            <img src="{{img}}" alt="">
+        </div>
+        <div class="ticket-area-right">
+            <h3>{{destination}}</h3>
+            <div>{{origin}}</div>
+            <div class="data-and-time">
+                {{departureDate}}
+                {{#if isAuthor}}
+                <a href="#/edit/{{_id}}" class="edit-flight-detail"></a>
+                {{/if}}
+            </div>
+            <div>
+                {{seats}} ({{cost}} per seat)
+            </div>
+        </div>
+    </div>
+</section>
